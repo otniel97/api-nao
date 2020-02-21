@@ -1,0 +1,20 @@
+npm install express pg pg-hstore sequelize morgan @babel/polyfill
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm install --save @babel/polyfill
+npm install nodemon -D
+npm install @babel/node -D
+
+sudo systemctl start postgresql activar la bd
+sudo su - postgres
+psql
+alter user postgres with password 'root';
+exit
+
+instalar postgres y pgadmin3
+crear servidor llamado ucla
+crear dentro del servidor ucla, la base de datos ucla
+user:postgres password:root port:5432 dir:localhost
+
+../node_modules/.bin/sequelize init
+../node_modules/.bin/sequelize db:migrate
+..node_modules/.bin/sequelize model:generate --name Category --attributes firstname:string,lastname:string,email:string
