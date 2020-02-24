@@ -1,3 +1,5 @@
+require('../config/env.js')
+
 module.exports = {
     development: {
         username: process.env.ARYA_DEV_USERNAME || 'postgres',

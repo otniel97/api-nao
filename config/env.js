@@ -9,16 +9,16 @@ process.env.PORT = process.env.PORT | 3000;
 //Conexión postgres
 //======================
 
-process.env.NAMEDB = 'nao';
-process.env.USERDB = 'postgres';
-process.env.PASSWORDDB = 'root';
+process.env.ARYA_DEV_DATABASE = 'nao';
+process.env.ARYA_DEV_USERNAME = 'postgres';
+process.env.ARYA_DEV_PASSWORD = 'root';
 process.env.DIR = 'localhost';
 
 //================================
 //            Entorno
 //================================
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 //================================
 //       Vencimiento del token

@@ -40,7 +40,7 @@ app.use(cors({ origin: process.env.CLIENT_CORS_URL }));
 
 app.options('*', cors({ origin: process.env.CLIENT_CORS_URL }));
 
-const sequelize = new Sequelize(process.env.NAMEDB, process.env.USERDB, process.env.PASSWORDDB, {
+const sequelize = new Sequelize(process.env.ARYA_DEV_DATABASE, process.env.ARYA_DEV_USERNAME, process.env.ARYA_DEV_PASSWORD, {
     host: process.env.DIR,
     dialect: 'postgres',
 });
